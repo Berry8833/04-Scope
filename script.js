@@ -63,3 +63,22 @@ function justShout(){
   return;
 }
 justShout();
+
+
+
+// Lexical Scope
+function getName(){
+  const myName = "Berry";
+  return myName;
+}
+
+
+function showlastName(){
+  const lastName = "K";
+  return lastName;
+}
+function displayFullName(){
+  const FullName = "Berry" + showlastName();
+  return FullName;
+}
+console.log(displayFullName());
